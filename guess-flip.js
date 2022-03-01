@@ -8,9 +8,12 @@ try{
 
     const call = args['call']
     if (call == null || (call != 'heads' && call != 'tails')) {
+        if (call == null) {
+            console.log('Error: no input.')
+        }
         throw err
     }
     console.log(flipACoin(call))
 } catch (err) {
-    console.log(`Error: no input.\nUsage: node guess-flip --call[heads|tails]`)
+    console.log('Usage: node guess-flip --call[heads|tails]')
 }

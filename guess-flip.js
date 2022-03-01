@@ -15,5 +15,5 @@ try{
     }
     console.log(flipACoin(call))
 } catch (err) {
-    console.log('Usage: node guess-flip --call[heads|tails]')
+    console.log('Usage: node guess-flip --call=[heads|tails]')
 }
